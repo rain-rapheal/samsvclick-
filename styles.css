@@ -424,7 +424,7 @@ input[type=checkbox]{
 .top-agencies{
   border: 1px solid gray;
   max-width: 95%;
-  margin: auto;
+  margin: auto auto 10px auto;
   /* height: 60vh; */
   position: relative;
   background-color: var(--clr-200);
