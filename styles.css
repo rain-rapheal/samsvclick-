@@ -335,6 +335,7 @@ input[type=checkbox]{
   
 }
 
+
 .slide-3 {
   background-image: url(./image/bg-3.jpg);
   
@@ -343,6 +344,7 @@ input[type=checkbox]{
   display: block;
   object-fit: cover;
   width: 100%;
+  opacity: 0.8;
   
 }
 .slide-content {
@@ -438,12 +440,21 @@ input[type=checkbox]{
   text-transform: capitalize;
   border: none;
   font-family: "Roboto-300" sans-serif;
-  background-color: var(--clr-200-hover);
+  background-color: var(--clr-100-hover);
   line-height: var(--lh-primary-600);
   /* text-align: center; */
   font-size: var(--fs-600);
   width: 20%;
   color: var(--clr-200);
+}
+.top-ag-header h1{
+  padding: 10px 2px 10px 2px;
+  width: 40%;
+  font-size: 20px;
+}
+.top-ag-header h1::before{
+  content: "";
+  margin-left: 20px;
 }
 .hr{
   margin:0px auto 20px auto;
@@ -549,7 +560,7 @@ input[type=checkbox]{
    -ms-border-radius:10% ;
    -o-border-radius:10% ;
 }
-
+/* --------------------------- */
 .hot-listing{
   border: 1px solid gray;
   max-width: 95%;
@@ -609,18 +620,54 @@ justify-content: center;
   
 }
 
-/* end  */
-/* hot3 */
+/* ---------------end-------------  */
+/*----------------- hot3 -----------*/
+.hot-listing .container h1{
+  padding: 10px 2px 10px 2px;
+  width: 40%;
+  font-size: 20px;
+  background-color: var(--clr-100-hover);
+}
+.hot-listing .container h1::before{
+  content: "";
+  margin-left: 20px;
+}
 .hot-3{
   display: flex;
-  gap: 5px;
+  /* gap: 2px; */
   text-align: center;
   background-color: var(--clr-200);
   z-index: 1;
+  font-size: 20px;
+  line-height: 40px;
+  height: 100%;
+  color: var(--clr-500);
 }
+.hot-3 a{
+  color: #000000;
+}
+.hot-3 i{
+  font-size:35px;
+  margin-top:10px;
+}
+.owl-hot li div{
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  font-size: 18px;
+}
+.owl-hot li div img{
+  width: 100%;
+  margin: 15px auto 10px auto;
+}
+
 .hot-3 li{
   border: 1px solid gray;
   width: 100%;
+  
+}
+.hot-3 li h3{
+  color: var(--clr-100-hover);
 }
 @media (max-width: 800px) {
   .hot-3{
@@ -644,10 +691,21 @@ justify-content: center;
 }
 
 /* ---------end--------- */
+/* --------------state------------- */
+.states{
+  margin: 2rem auto !important;
+}
+/* ------------end of state------- */
 /* --------preferred----- */
 .preferred{
   text-align: center;
   background-color: var(--clr-200);
+  margin: 2rem auto;
+  height: 100%;
+}
+.pre-header{
+  font-size: 25px;
+  line-height: 35px;
 }
 .pre-grid{
   display: flex;
@@ -656,6 +714,10 @@ justify-content: center;
   justify-content: center;
   gap: 10px;
   
+}
+.pre-grid li h2{
+  font-size: 20px;
+  text-transform: capitalize;
 }
 @media (max-width: 800px) {
   .pre-grid{
@@ -666,6 +728,10 @@ justify-content: center;
   }
   .pre-grid li{
     border-bottom:1px solid grey ;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 2rem;
+    
   }
   
   
@@ -738,17 +804,25 @@ justify-content: center;
 }
 .blog-grid-element button{
   margin-top:10px;
+  background-color: var(--clr-100-hover);
+  color: var(--clr-200);
+  padding: 5px 10px 5px 10px;
+  text-transform: capitalize;
 }
 /* --------------end-------------- */
 /* ----------owl-carousel owl-agencies--------- */
-.top-agent-header{
-  /* border: 1px solid gray; */
-  background: var(--clr-200-hover);
-  color: var(--clr-200);
-  width: 50%;
-  text-transform: uppercase;
-  z-index: 1;
+
+.top-ag-header h1{
+  padding: 5px 2px 10px 5px;
+  width: 30%;
+  font-size: 20px;
+  background-color: var(--clr-100-hover);
 }
+.top-ag-header h1::before{
+  content: "";
+  margin-left: 20px;
+}
+
 .top-agent .container{
   content: "background-image:none";
 }
@@ -904,6 +978,10 @@ font-size: 20px;
  height: 100%;
  padding: 20px;
  
+}
+.last-header img{
+  display: block;
+  margin: auto;
 }
 .last-header p{
   margin: 10px auto;
